@@ -3,6 +3,7 @@ import './SignIn.css';
 import TextField from '@mui/material/TextField';
 import BookLogo from '../../images/bookStoreLoginLogo.png';
 import Button from '@mui/material/Button';
+import { Link } from "@mui/material";
 
 
 
@@ -18,12 +19,10 @@ class SignIn extends Component {
                     </div>
                     <div className="rightpart">
                         <div className="buttons">
-                            <div><Button className="upbtn" variant="text">LOGIN</Button></div>
-                            <div><Button className="upbtn" variant="text">SIGNUP</Button></div>
+                            <div className="upbtn">LOGIN</div>
+                            {/* <div><Link className="upbtn" href="/SignUp">SIGNUP</Link></div> */}
+                            <div><Link className="upbtn" to="/SignUp">SIGNUP</Link></div>
                         </div>
-                        {/* <div>
-                            <TextField fullWidth id="outlined-basic" label="Full Name" variant="outlined" />
-                        </div> */}
                         <div>
                             <TextField id="outlined-basic" label="Email" variant="outlined" />
                         </div>
@@ -34,10 +33,6 @@ class SignIn extends Component {
                         <div className="divider">
                             ------------    OR     -----------
                         </div>
-
-                        {/* <div>
-                            <TextField id="outlined-basic" label="Mobil Number"  variant="outlined" />
-                        </div> */}
                         <div className="bottom"><Button id="downbtn" variant="text">login</Button></div>
                         <div className="downbtns">
                             <div><Button id="facebookbtn">Facebook</Button></div>

@@ -3,6 +3,9 @@ import './SignUp.css';
 import TextField from '@mui/material/TextField';
 import BookLogo from '../../images/bookStoreLoginLogo.png';
 import Button from '@mui/material/Button';
+import { Link } from "@mui/material";
+// import { Link } from "react-router-dom";
+
 
 
 
@@ -18,8 +21,9 @@ class SignUp extends Component {
                     </div>
                     <div className="rightpart">
                         <div className="buttons">
-                            <div><Button className="upbtn" variant="text">LOGIN</Button></div>
-                            <div><Button className="upbtn" variant="text">SIGNUP</Button></div>
+                            {/* <div><Link className="upbtn" href="/login">LOGIN</Link></div> */}
+                            <div><Link className="upbtn" to="/">LOGIN</Link></div>
+                            <div className="upbtn">SIGNUP</div>
                         </div>
                         <div>
                             <TextField fullWidth id="outlined-basic" label="Full Name" variant="outlined" />

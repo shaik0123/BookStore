@@ -1,0 +1,53 @@
+.card{
+    width: 15%;
+}
+.mainbookdiv{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bookdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdede;
+    padding-right: 10%;
+}
+.booklogo{
+    border-radius: 0%;
+    padding: 5%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-weight:bold;
+}
+.scndhd{
+    font-weight: lighter;
+}
+.price{
+    display: flex;
+}
+.ratingdiv{
+    display: flex;
+}
+.rating{
+    background-color: green;
+    width: 20%;
+    color: #fff;
+    text-align: center;
+}
+.ratenum{
+    font-weight: lighter;
+    padding-left: 6%;
+}
+.offer{
+    font-weight: bolder;
+}
+.original{
+    font-weight: lighter;
+    padding-left: 6%;
+}

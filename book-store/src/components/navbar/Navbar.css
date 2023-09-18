@@ -1,0 +1,28 @@
+.bar{
+    background-color:#A03037;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.baricons{
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+#iconp{
+    color: #fff;
+    padding-bottom: 5%;
+}
+#iconc{
+    color: #fff;
+}
