@@ -2,9 +2,14 @@ import React from "react";
 import './Forgotpassword.css'
 import TextField from '@mui/material/TextField';
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
 function ForgotPassword() {
+    const navigate=useNavigate();
+    const handlecreataccount=()=>{
+        navigate('/')
+    }
     return (
         <div className="Passmain">
             <div className="passnext">
@@ -23,7 +28,7 @@ function ForgotPassword() {
                     </div>
                 </div>
                 <div className="creatcontent">
-                    <div className="creatbtn"><Button id="creatbtn">Create Account</Button></div>
+                    <div className="creatbtn"><Button onClick={handlecreataccount} id="creatbtn">Create Account</Button></div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './SignIn.css';
 import TextField from '@mui/material/TextField';
 import BookLogo from '../../images/bookStoreLoginLogo.png';
@@ -11,9 +11,21 @@ import { Link, useNavigate } from "react-router-dom";
 
 function SignIn() {
     const navigate = useNavigate();
+    const [loginDtails,setloginDtails]=useState({
+        Email:"",
+        Password:""
+    })
+    const handleemail=(event)=>{
+        setloginDtails({...loginDtails,Email:event.target.value})
+    }
+    const handlepassword=(event)=>{
+        setloginDtails({...loginDtails,Password:event.target.value})
+    }
     const handleLogin=()=>{
         navigate('/dashboard')
+        console.log(loginDtails)
     }
+    
     return (
         <div className="firstmain">
             <div className="main">
@@ -27,10 +39,10 @@ function SignIn() {
                         <div><Link className="upbtn" to="/SignUp">SIGNUP</Link></div>
                     </div>
                     <div>
-                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                        <TextField id="outlined-basic" label="Email" variant="outlined" onChange={handleemail}/>
                     </div>
                     <div className="password">
-                        <div><TextField id="outlined-basic" label="Password" type="password" variant="outlined" /></div>
+                        <div><TextField id="outlined-basic" label="Password" type="password" variant="outlined" onChange={handlepassword} /></div>
                         <div><Link to="/forgotpassword" >Forgot Password?</Link></div>
                     </div>
                     <div className="divider">

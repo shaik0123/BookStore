@@ -2,9 +2,14 @@ import React from "react";
 import './BookFive.css';
 import OrderLogo from '../images/OrderSuccessLogo.png';
 import { Button, TextField } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
 function CardsFive() {
+    const navigate=useNavigate();
+    const handleshopping=()=>{
+        navigate('/dashboard')
+    }
     return (
         <div className="cartfive">
             <div className="cartfivemain">
@@ -34,7 +39,7 @@ function CardsFive() {
                 </table>
                 </div>
                 <div>
-                    <div className="continueshopping"><Button id="continueshopping">Continue Shopping</Button></div>
+                    <div className="continueshopping"><Button onClick={handleshopping} id="continueshopping">Continue Shopping</Button></div>
                 </div>
             </div>
         </div>

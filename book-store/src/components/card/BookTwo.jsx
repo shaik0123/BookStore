@@ -6,8 +6,18 @@ import CartTwoLogo from '../images/Book.png';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { Link } from "react-router-dom";
+import CardsThree from "./BookThree";
+import CardsFour from "./BookFour";
 
 function CardsTwo() {
+    const [order,setorder]=useState(false);
+    const [Continue,setContinue]=useState(false);
+    const handleorder=()=>{
+        setorder(!order)
+    }
+    function getCardsthree(child){
+        setContinue(child);
+    }
     return (
         <div className="cardtwomain">
             <div className="homemycart">
@@ -44,15 +54,19 @@ function CardsTwo() {
                     </div>
                 </div>
                 <div className="carttwothird">
-                    <div className="placeorder" ><Button className="placeorder">place order</Button></div>
+                    <div className="placeorder" ><Button onClick={handleorder} className="placeorder">place order</Button></div>
                 </div>
             </div>
+            {order?<CardsThree getCardsthree={getCardsthree}/>:
             <div className="carttwoaddress">
                 Address Details
             </div>
+            }
+            {Continue?<CardsFour/>:
             <div className="carttwosummary">
                 Order Summary
             </div>
+            }   
         </div>
     )
 }

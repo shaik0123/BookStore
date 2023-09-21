@@ -2,8 +2,13 @@ import React from "react";
 import './BookFour.css';
 import CartFourLogo from '../images/Book.png';
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function CardsFour() {
+    const navigate=useNavigate();
+    const checkout=()=>{
+        navigate('/cardsfive')
+    }
     return (
         <div className="cartfour">
             <div className="cartfourmain">
@@ -30,7 +35,7 @@ function CardsFour() {
                     </div>
                 </div>
                 <div className="cartfourthird">
-                    <div className="checkout" ><Button className="checkout">Check Out</Button></div>
+                    <div className="checkout" ><Button  onClick={checkout}className="checkout">Check Out</Button></div>
                 </div>
 
             </div>

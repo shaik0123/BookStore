@@ -7,6 +7,7 @@ import ForgotPassword from "../forgotpassword/Forgotpassword";
 import Layout from "../navbar/Layout";
 import CardsOne from "../card/BookOne";
 import CardsTwo from "../card/BookTwo";
+import CardsFive from "../card/BookFive";
 
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
                         <Route path={'/forgotpassword'} element={<ForgotPassword />}></Route>
                         <Route path={'/cardsone'} element={<CardsOne />}></Route>
                         <Route path={'/cardstwo'} element={<CardsTwo />}></Route>
+                        <Route path={'/cardsfive'} element={<CardsFive />}></Route>
                     </Routes>
                 </Layout>
             </BrowserRouter>
