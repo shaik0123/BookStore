@@ -1,0 +1,58 @@
+.cartfour{
+    width: 98vw;
+    height: 100vh;
+    margin-top: 1%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cartfourmain{
+    width: 50%;
+    padding: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+}
+.cartfoursecond{
+    display:flex;
+}
+.cartfourheading{
+    font-size: large;
+    font-weight: 600;
+}
+#cartfourlogo{
+    border-radius: 0%;
+    width: 70%;
+}
+.cardfourcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cartfourthird{
+    display: flex;
+    justify-content: flex-end;
+}
+div .checkout{
+    color: #ffffff;
+    background-color:#0000ff8a;
+    border-radius: 3px;
+}
+.cardfourscndhd{
+    font-weight: lighter;
+}
+.cardfourprice{
+    display: flex;
+}
+.cardfouroffer{
+    margin-top: 1%;
+    font-weight: bolder;
+}
+.cardfouroriginal{
+    margin-top: 1%;
+    font-weight: lighter;
+    padding-left: 2%;
+}
+.imgfour{
+    width: 20%;
+    padding: 1%;
+}

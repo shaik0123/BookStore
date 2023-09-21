@@ -1,0 +1,56 @@
+.cartthreemain{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartthree{
+    width: 50%;
+    border: 1px solid #00000061;
+    border-radius: 2px;
+    margin: 2%;
+    padding: 1%;
+    padding-left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.cartthreefirst{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.customerdetails{
+    font-size: large;
+    font-weight:600;
+}
+#addnewaddress{
+    color: #a52a2a;
+    border: 1px solid #a52a2a;
+    background-color: #fff;
+}
+.cartthreescnd{
+    display: flex;
+    width: 60%;
+    padding-top: 1%;
+    justify-content: space-between;
+}
+.cartthreethird{
+    padding-top: 1%;
+    width: 60%;
+}
+.cartthreefourth{
+    width: 60%;
+    padding-top: 1%;
+}
+.cartthreefifth{
+    width: 90%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+div .contineubtn{
+    color: #ffffff;
+    background-color:#0000ff8a;
+    border-radius: 3px;
+}

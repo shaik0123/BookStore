@@ -1,0 +1,50 @@
+.cartfive{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartfivemain{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+}
+#orderimg{
+    width: 60%;
+}
+.ordercontent{
+    width: 50%;
+    text-align: center;
+}
+.table{
+    width: 100%;
+    border: 1px solid #0000007a;
+}
+.tablehead{
+    display: flex;
+    justify-content: space-around;
+}
+table{
+    border: 1px solid #0000007a;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #0000007a;
+    border-collapse: collapse;
+    width: 30%;
+    text-align: center;
+}
+.continueshopping{
+    border-radius: 5px;
+    background-color: blue;
+}
+#continueshopping{
+    color: #ffffff;
+}
+
+
+

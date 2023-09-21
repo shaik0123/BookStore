@@ -1,0 +1,98 @@
+.cardtwomain{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homemycart{
+    width: 50%;
+    display: flex;
+    padding: 1%;
+    align-items: flex-start;
+}
+.location{
+    border: 1px solid #000000;
+    width: 30%;
+}
+.cardtwo{
+    width: 51%;
+    border: 1px solid hsla(0, 0%, 0%, 0.38);
+    border-radius: 2px;
+    padding: 2%;
+}
+.carttwofirst{
+    height: 20%;
+    font-size: large;
+    font-weight:500;
+    display: flex;
+    justify-content: space-between;
+}
+.carttwosecond{
+    height: 70%;
+    display: flex;   
+}
+.cardtwocontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cardtwoheading{
+    font-size: large;
+    font-weight: 600;
+}
+#carttwologo{
+    border-radius: 0%;
+    width: 70%;
+}
+.carttwothird{
+    display: flex;
+    justify-content: flex-end;
+}
+div .placeorder{
+    color: #ffffff;
+    background-color:#0000ff8a;
+    border-radius: 3px;
+}
+.cardtwoscndhd{
+    font-weight: lighter;
+}
+.cardtwoprice{
+    display: flex;
+}
+.cardtworatenum{
+    margin-top: 1%;
+    font-weight: lighter;
+    padding-left: 2%;
+}
+.cardtwooffer{
+    margin-top: 1%;
+    font-weight: bolder;
+}
+.cardtwooriginal{
+    margin-top: 1%;
+    font-weight: lighter;
+    padding-left: 2%;
+}
+.imgtwo{
+    width: 20%;
+}
+#input{
+    width: 10%;
+}
+.carttwoaddress{
+    width: 53%;
+    padding: 1%;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 1%;
+    border: 1px solid #00000079;
+}
+.carttwosummary{
+    width: 53%;
+    padding: 1%;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 1%;
+    border: 1px solid #00000079;
+}

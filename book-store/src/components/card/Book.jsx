@@ -2,16 +2,18 @@ import * as React from 'react';
 import './Book.css';
 import BookLogo from '../images/Book.png';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 export default function Cards() {
+    const navigate=useNavigate();
+    const handlecard=()=>{
+       navigate('/cardsone')
+    }
     return (
         <div className='cardmain'>
-            <Card className="card">
+            <Card className="card" onClick={handlecard}>
                 <div className='mainbookdiv'>
                     <CardMedia
                         sx={{ height: 30 }}

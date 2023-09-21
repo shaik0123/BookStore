@@ -1,0 +1,144 @@
+.cardone{
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 80%;
+    display: flex;
+    padding: 1%;
+}
+.cardonemain{
+    width: 80%;
+    height: 90%;
+    display: flex;
+}
+.cardonefirst{
+    width: 5%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+.bookonelogo{
+    border-radius: 0%;
+}
+.bookonelogob{
+    border-radius: 5%;
+    border: 1px solid #0000003c;
+}
+.cardonesecond{
+    width: 30%;
+    height: 70%;
+}
+.booktwologo{
+    border-radius: 0%;
+    padding: 3%;
+}
+.cardonethird{
+    width: 65%;
+    height: auto;
+    margin-left: 5%;
+   
+}
+.mainbook{
+    width: 100%;
+    height: 80%;
+    border: 1px solid #0000003b;
+    padding: 15% 0% 0% 0%;
+    
+}
+.cardonebtn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divaddbtn{
+    background-color: #a52a2a;
+    border: none;
+    border-radius: 5px;
+}
+div .addbtn,div .wishlistbtn{
+    color: #ffffff;
+    width: 11vw;
+}
+.divwishlistbtn{
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+
+}
+.cardonecontent{
+    display: flex;
+    flex-direction: column;
+}
+.cardoneheading{
+    font-size:xx-large;
+}
+.cardonescndhd,li{
+    font-weight: lighter;
+}
+.cardoneprice{
+    display: flex;
+}
+.cardoneratingdiv{
+    display: flex;
+}
+.cardonerating{
+    margin-top: 1%;
+    background-color: green;
+    width: 7%;
+    color: #fff;
+    text-align: center;
+}
+.cardoneratenum{
+    margin-top: 1%;
+    font-weight: lighter;
+    padding-left: 2%;
+}
+.cardoneoffer{
+    margin-top: 1%;
+    font-weight: bolder;
+}
+.cardoneoriginal{
+    margin-top: 1%;
+    font-weight: lighter;
+    padding-left: 2%;
+}
+.customer{
+    font-size:x-large;
+}
+.customerfeedback{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    background-color: #eeececc8;
+}
+.reviewfeild{
+    width:95%;
+    background-color: #fff;
+}
+.cardonesubmit{
+    display: flex;
+    justify-content: right;
+    padding: 1%;
+    padding-right: 5%;
+}
+#cardonesubmit{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 5vw;
+    height: 4vh;
+}
+.cartoneavatar{
+    display: flex;
+}

@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import Cards from '../card/Book';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -127,7 +127,7 @@ export default function Navbar() {
                     onClose={handleClose}
                   >
                     <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                    <MenuItem onClick={handleClose}>Logout</MenuItem>
                   </Menu>
                 </div>
                 <div>

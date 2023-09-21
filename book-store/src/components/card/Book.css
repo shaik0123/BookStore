@@ -1,3 +1,8 @@
+.cardmain{
+    display: flex;
+    justify-content:flex-start;
+    padding: 4%;
+}
 .card{
     width: 15%;
 }
