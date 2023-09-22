@@ -5,9 +5,9 @@ import SignUp from "../pages/signup/SignUp";
 import Dashboard from "../dashboard/Dashboard";
 import ForgotPassword from "../forgotpassword/Forgotpassword";
 import Layout from "../navbar/Layout";
-import CardsOne from "../card/BookOne";
-import CardsTwo from "../card/BookTwo";
-import CardsFive from "../card/BookFive";
+import CardsTwo from "../book_components/Cart";
+import CardsOne from "../book_components/BookDetails";
+import CardsFive from "../book_components/OrderSuccessful";
 
 
 function Router() {

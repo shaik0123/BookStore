@@ -71,6 +71,9 @@ export default function Navbar() {
   const handlelogout=()=>{
     navigate('/')
   }
+  const handlecart=()=>{
+    navigate('/cardstwo')
+  }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -142,7 +145,7 @@ export default function Navbar() {
               <div className='cart'>
                 <div>
                   <IconButton>
-                    <ShoppingCartOutlinedIcon id="iconc" />
+                    <ShoppingCartOutlinedIcon onClick={handlecart} id="iconc" />
                   </IconButton>
                 </div>
                 <div>

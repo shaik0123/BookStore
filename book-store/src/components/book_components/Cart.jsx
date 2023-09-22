@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import './BookTwo.css'
+import './Cart.css'
 import { Button, IconButton, TextField } from "@mui/material";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import CartTwoLogo from '../images/Book.png';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { Link } from "react-router-dom";
-import CardsThree from "./BookThree";
-import CardsFour from "./BookFour";
+import CardsThree from "./CustomerDtails";
+import CardsFour from "./OrderSummary";
 
 function CardsTwo() {
     const [order,setorder]=useState(false);

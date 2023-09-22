@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "../card/Book";
+import Cards from "../book_components/Card";
 
 function Dashboard(){
         return(

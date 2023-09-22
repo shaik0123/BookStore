@@ -1,5 +1,5 @@
 import React from "react";
-import './BookOne.css'
+import './BookDetails.css'
 import BookOneLogo from '../images/Book.png';
 import BookTwoLogo from '../images/Newbook.jpg'
 import { Avatar, Button, IconButton, TextField } from "@mui/material";
