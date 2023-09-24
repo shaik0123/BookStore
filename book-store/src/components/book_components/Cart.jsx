@@ -13,7 +13,7 @@ function CardsTwo() {
     const [order,setorder]=useState(false);
     const [Continue,setContinue]=useState(false);
     const handleorder=()=>{
-        setorder(!order)
+        setorder(true)
     }
     function getCardsthree(child){
         setContinue(child);
@@ -54,7 +54,10 @@ function CardsTwo() {
                     </div>
                 </div>
                 <div className="carttwothird">
+                    {!order?
                     <div className="placeorder" ><Button onClick={handleorder} className="placeorder">place order</Button></div>
+                    :""
+                    }
                 </div>
             </div>
             {order?<CardsThree getCardsthree={getCardsthree}/>:

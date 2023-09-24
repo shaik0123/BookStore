@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import BookLogo from '../../images/bookStoreLoginLogo.png';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from "react-router-dom";
+import { signIn, signUp } from "../../services/UserServices";
 
 
 
@@ -29,7 +30,7 @@ function SignIn() {
         passwordError: false,
         passwordHelper: "",
     })
-    const handleLogin=()=>{
+    const handleLogin= async()=>{
         let emailTest = emailRegex.test(loginDtails.email);
         let passwordTest =passwordRegex.test(loginDtails.password);
 
@@ -65,7 +66,10 @@ function SignIn() {
         }
         console.log(loginDtails)
         if(emailTest === true && passwordTest === true){
-         navigate('/dashboard')
+            let response = await signIn(loginDtails);
+            console.log(response);
+            localStorage.setItem("AccessToken",response.data.result.accessToken)
+            navigate('/dashboard')
         
         }
     }

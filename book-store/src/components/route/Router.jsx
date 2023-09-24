@@ -8,6 +8,8 @@ import Layout from "../navbar/Layout";
 import CardsTwo from "../book_components/Cart";
 import CardsOne from "../book_components/BookDetails";
 import CardsFive from "../book_components/OrderSuccessful";
+import { AuthRoute } from "./AuthRoute";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 
 function Router() {
@@ -16,9 +18,9 @@ function Router() {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        <Route exact path={'/'} element={<SignIn />}></Route>
-                        <Route path={'/SignUp'} element={<SignUp />}></Route>
-                        <Route path={'/dashboard'} element={<Dashboard />}></Route>
+                        <Route exact path={'/'} element={<AuthRoute><SignIn /></AuthRoute>}></Route>
+                        <Route path={'/SignUp'} element={<AuthRoute><SignUp /></AuthRoute>}></Route>
+                        <Route path={'/dashboard'} element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
                         <Route path={'/forgotpassword'} element={<ForgotPassword />}></Route>
                         <Route path={'/cardsone'} element={<CardsOne />}></Route>
                         <Route path={'/cardstwo'} element={<CardsTwo />}></Route>

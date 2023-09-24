@@ -29,7 +29,7 @@ function CardsThree({getCardsthree}) {
         setcustomerDtails({...customerDetails,state:event.target.value})
     }
     const handlecontinue=()=>{
-        setContinue(!Continue);
+        setContinue({...Continue, Continue:true});
         getCardsthree(Continue)
         console.log(customerDetails)
     }
@@ -66,7 +66,7 @@ function CardsThree({getCardsthree}) {
                     </div>
                 </div>
                 <div className="cartthreefifth">
-                    <div className="contineubtn"><Button onClick={handlecontinue} className="contineubtn">Continue</Button></div>
+                    <div className="contineubtn"><Button onClick={handlecontinue} className="contineubtn">Continue</Button></div>       
                 </div>
             </div>
         </div>

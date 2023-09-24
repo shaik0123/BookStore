@@ -69,6 +69,7 @@ export default function Navbar() {
     setAnchorEl(null);
   };
   const handlelogout=()=>{
+    localStorage.removeItem("AccessToken")
     navigate('/')
   }
   const handlecart=()=>{

@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import BookLogo from '../../images/bookStoreLoginLogo.png';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from "react-router-dom";
+import { signUp } from "../../services/UserServices";
 
 
 
@@ -43,7 +44,7 @@ function SignUp() {
         mobileHelper:""
     })
 
-    const handleSignup=()=>{
+    const handleSignup= async()=>{
 
         let nameTest = nameRegex.test(signup.fullname);
         let emailTest = emailRegex.test(signup.email);
@@ -112,7 +113,10 @@ function SignUp() {
         }
         console.log(signup)
         if(nameTest === true && emailTest === true && passwardTest === true && mobileTest === true){
-            navigate("/")
+            let response = await signUp(signup);
+            console.log(response);
+            alert("User Registration Successfull")
+           // navigate("/")
         } 
         
     }
