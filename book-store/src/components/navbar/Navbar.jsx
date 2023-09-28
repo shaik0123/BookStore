@@ -14,12 +14,17 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { useNavigate } from 'react-router-dom';
+import { countContext } from '../book_components/BookQuantity';
+import { Badge } from '@mui/material';
+import { getCartItems } from '../services/BookServices';
+import { CartContext } from '../context/CartContext';
+import { NavbarContext } from '../context/NavbarContext';
 
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  color:'black',
+  color: 'black',
   backgroundColor: 'white',
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 1),
@@ -60,6 +65,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const navigate = useNavigate();
+  //const newcount = React.useContext(countContext);
+  const {settoggle}=React.useContext(CartContext);
+  const {count}=React.useContext(NavbarContext);
+  const handlehomeicon=()=>{
+    navigate('/dashboard')
+  }
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -68,32 +79,38 @@ export default function Navbar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const handlelogout=()=>{
+  const handlelogout = () => {
     localStorage.removeItem("AccessToken")
     navigate('/')
   }
-  const handlecart=()=>{
-    navigate('/cardstwo')
+  const handlecart = () => {
+      settoggle(true);
   }
+  
+  
+  
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar className='bar'>
-          <div>
-            <IconButton>
-              <img src={Logo} alt="BookLogo" />
-            </IconButton>
+          <div className='homeicon' onClick={handlehomeicon}>
+            <div>
+              <IconButton>
+                <img src={Logo} alt="BookLogo" />
+              </IconButton>
+            </div>
+            <div>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                Bookstore
+              </Typography>
+            </div>
           </div>
-          <div>
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ display: { xs: 'none', sm: 'block' } }}
-            >
-              Bookstore
-            </Typography>
-          </div>
+
           <div>
             <Search>
               <SearchIconWrapper>
@@ -118,7 +135,7 @@ export default function Navbar() {
                     onClick={handleMenu}
                     color="inherit"
                   >
-                    <PersonOutlineOutlinedIcon/>
+                    <PersonOutlineOutlinedIcon />
                   </IconButton>
                   <Menu
                     id="menu-appbar"
@@ -145,8 +162,10 @@ export default function Navbar() {
               </div>
               <div className='cart'>
                 <div>
-                  <IconButton>
-                    <ShoppingCartOutlinedIcon onClick={handlecart} id="iconc" />
+                  <IconButton onClick={handlecart}>
+                    <Badge className="badge" badgeContent={count===0?" ":count}>
+                    <ShoppingCartOutlinedIcon id="iconc" />
+                    </Badge>
                   </IconButton>
                 </div>
                 <div>

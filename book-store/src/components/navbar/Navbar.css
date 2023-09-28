@@ -1,3 +1,10 @@
+.badge{
+    color: #fff;
+}
+.homeicon{
+    display: flex;
+    cursor: pointer;
+}
 .bar{
     background-color:#A03037;
 }

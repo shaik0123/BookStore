@@ -1,0 +1,6 @@
+.bookquantity{
+    width: 11vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}

@@ -8,6 +8,7 @@ function ConditionalNavbar(){
     return(
         <div>
                 {
+                    
                     displaynonpaths.includes(location.pathname)?null:<Navbar/>
                 }
         </div>

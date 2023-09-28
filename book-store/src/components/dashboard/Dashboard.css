@@ -1,0 +1,6 @@
+.mainbookdashboard{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}

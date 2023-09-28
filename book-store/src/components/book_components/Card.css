@@ -1,10 +1,13 @@
 .cardmain{
     display: flex;
-    justify-content:flex-start;
-    padding: 4%;
+    /* background-color: yellow; */
+    padding: 1%;
+    width: 15%;
+    margin-top: 5%;
+    /* border: 1px solid red; */
 }
 .card{
-    width: 15%;
+    width: 100%;
 }
 .mainbookdiv{
     display: flex;

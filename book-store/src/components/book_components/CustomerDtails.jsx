@@ -29,7 +29,7 @@ function CardsThree({getCardsthree}) {
         setcustomerDtails({...customerDetails,state:event.target.value})
     }
     const handlecontinue=()=>{
-        setContinue({...Continue, Continue:true});
+        setContinue(!Continue);
         getCardsthree(Continue)
         console.log(customerDetails)
     }

@@ -6,10 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { useNavigate } from 'react-router-dom';
 
-export default function Cards() {
-    const navigate=useNavigate();
-    const handlecard=()=>{
-       navigate('/cardsone')
+export default function Cards({ data, SelectedData }) {
+    const navigate = useNavigate();
+    const handlecard = () => {
+        SelectedData(data)
+        console.log(data)
     }
     return (
         <div className='cardmain'>
@@ -25,10 +26,10 @@ export default function Cards() {
                 <CardContent>
                     <div className='content'>
                         <div className='heading'>
-                            Don't Make Me Think
+                            {data.bookName}
                         </div>
                         <div className='scndhd'>
-                            by steve kurg
+                            {data.author}
                         </div>
                         <div className='ratingdiv'>
                             <div className='rating'>4.5 &#9733;</div>
@@ -36,8 +37,12 @@ export default function Cards() {
                         </div>
 
                         <div className='price'>
-                            <div className='offer'>RS.1500</div>
-                            <div className='original'><s>Rs.2000</s></div>
+                            <div className='offer'>
+                                {data.discountPrice}
+                            </div>
+                            <div className='original'><s>
+                                {data.price}
+                            </s></div>
                         </div>
                     </div>
                 </CardContent>

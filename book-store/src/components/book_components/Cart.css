@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5%;
 }
 .homemycart{
     width: 50%;
@@ -14,6 +15,7 @@
 .location{
     border: 1px solid #000000;
     width: 30%;
+    height: 5vh;
 }
 .cardtwo{
     width: 51%;
@@ -22,24 +24,32 @@
     padding: 2%;
 }
 .carttwofirst{
-    height: 20%;
     font-size: large;
     font-weight:500;
     display: flex;
     justify-content: space-between;
 }
 .carttwosecond{
-    height: 70%;
-    display: flex;   
+    display: flex;
+    column-gap: 4vh;
+   
 }
 .cardtwocontent{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 2%;
+   
+
 }
 .cardtwoheading{
     font-size: large;
     font-weight: 600;
+}
+.cartbookquantity{
+    width: 8vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 #carttwologo{
     border-radius: 0%;
@@ -76,6 +86,7 @@ div .placeorder{
 }
 .imgtwo{
     width: 20%;
+    padding: 2%;
 }
 #input{
     width: 10%;
